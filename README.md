@@ -1,5 +1,13 @@
 # MEU VIVO EMPRESAS
 
+## Instalar as dependências
+
+### yarn install
+
+ou
+
+### npm install
+
 
 ## Inicialização do projeto em DEV
 

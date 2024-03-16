@@ -1,8 +1,11 @@
+import GlobalStyle from "./styles/globaStyles";
+
 function App() {  
 
   return (
-    <>
-      <h1>Meu VIVO empresas</h1>
+    <>           
+      <GlobalStyle />
+      <h1>Meu VIVO empresas</h1>      
     </>
   )
 }
