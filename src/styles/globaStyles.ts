@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import vivoTheme from './themes/vivo.style';
  
 const GlobalStyle = createGlobalStyle`
     *{
@@ -6,9 +7,11 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+
     body {
-        background: #FFFAFA;
+        background: ${vivoTheme.color_background};
         font-family: "Poppins", sans-serif;
+        color: ${vivoTheme.color_primary};
     }
 `;
  
