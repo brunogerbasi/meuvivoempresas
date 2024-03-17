@@ -9,8 +9,7 @@ function App() {
     <>
       <ThemeProvider theme={vivoTheme}>
         <GlobalStyle />
-        <Header />
-        <h1>Meu VIVO empresas</h1>
+        <Header />        
       </ThemeProvider>
     </>
   )

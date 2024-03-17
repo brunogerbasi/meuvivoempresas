@@ -12,9 +12,13 @@ export const HeaderContainer  = styled.header`
 export const HeaderWrapper  = styled.div`
     display: flex;
     align-items: center;    
-    gap: 27px;
-    max-width: 1005px;
-    height: 88px;
+    gap: 1.68rem;
+    padding : 0 2rem ;
+    height: 5.5rem;
     width: 100%;    
+
+    @media (min-width: 1250px) {
+        
+    }
 `
 

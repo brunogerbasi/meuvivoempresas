@@ -1,18 +1,23 @@
-import { useState } from 'react';
+
 import Burger from '../Burguer/Burguer';
 import Logo from '../Logo/Logo';
 import { HeaderContainer, HeaderWrapper } from './Header.style';
+import Menu from '../Menu/Menu';
+import { HeaderProvider } from '../../context/HeaderContext';
 
-const Header = () => {
-    const [open, setOpen] = useState(false);
+const Header = () => {  
 
     return (
-        <HeaderContainer>
-            <HeaderWrapper>
-                <Burger open={open} setOpen={setOpen}/>
-                <Logo />
-            </HeaderWrapper>
-        </HeaderContainer>
+        <HeaderProvider>
+            <HeaderContainer>
+                <HeaderWrapper>
+                    <Burger/>
+                    <Logo />
+                </HeaderWrapper>
+            </HeaderContainer>
+            <Menu/>
+        </HeaderProvider>
+        
     );
 }
 export default Header;

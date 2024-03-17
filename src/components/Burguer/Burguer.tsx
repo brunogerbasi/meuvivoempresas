@@ -1,14 +1,11 @@
-import React from 'react';
+import { useHeaderContext } from '../../hooks/useHeaderContext';
 import { BurgerBtn } from './Burguer.style';
 
-interface BurgerProps {
-    open: boolean;
-    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
+const Burger = () => {
+    const { open, toggleMenu } = useHeaderContext();
 
-const Burger: React.FC<BurgerProps> = ({ open, setOpen }) => {
     return (
-        <BurgerBtn aria-label="Toggle menu" onClick={() => setOpen(!open)}>
+        <BurgerBtn aria-label="Button Menu"  onClick={toggleMenu}>
             <div className={open ? 'open' : ''}></div>
             <div className={open ? 'open' : ''}></div>
             <div className={open ? 'open' : ''}></div>
