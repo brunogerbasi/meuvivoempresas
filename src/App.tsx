@@ -1,15 +1,15 @@
 import { ThemeProvider } from "styled-components";
-import Header from "./components/Header/Header";
 import GlobalStyle from "./styles/globaStyles";
 import vivoTheme from "./styles/themes/vivo.style";
+import Home from "./pages/Home/Home";
 
 function App() {
 
   return (
     <>
       <ThemeProvider theme={vivoTheme}>
-        <GlobalStyle />
-        <Header />        
+        <GlobalStyle />        
+        <Home />       
       </ThemeProvider>
     </>
   )

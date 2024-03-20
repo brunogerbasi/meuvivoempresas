@@ -6,8 +6,7 @@ interface NavMenuProps {
 }
 
 export const MenuWrapper = styled.div`    
-    width: 100%;   
-    height: calc(100vh - 5.5rem);    
+    width: 100%;
 `
 export const MenuOverlay = styled.div`
     position: fixed;
