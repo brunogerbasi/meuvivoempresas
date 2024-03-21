@@ -1,4 +1,4 @@
-import Discovery from "../../components/Discover/Discovery";
+import Discovery from "../../components/Discovery/Discovery";
 import Header from "../../components/Header/Header";
 import Technologies from "../../components/Technologies/Technologies"
 import { HomeContainer } from "./Home.style";

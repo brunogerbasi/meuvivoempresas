@@ -29,6 +29,15 @@ ou
 ### npm lint
 
 
+## Inicialização dos Testes
+
+### yarn jest test
+
+ou
+
+### npm jest test
+
+
 ## Build 
 
 ### yarn build
