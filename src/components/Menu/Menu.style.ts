@@ -7,6 +7,8 @@ interface NavMenuProps {
 
 export const MenuWrapper = styled.div`    
     width: 100%;
+    position: relative;
+    z-index: 19;
 `
 export const MenuOverlay = styled.div`
     position: fixed;
@@ -15,7 +17,12 @@ export const MenuOverlay = styled.div`
     width: 100%;
     height:calc(100vh - 5.5rem);    
     background: rgba(108, 104, 104, 0.79);
-    cursor: pointer;    
+    cursor: pointer;      
+    
+    @media only screen and (max-width: 768px) {   
+        height:calc(100vh - 3rem); 
+        top: 3rem;  
+    }
 `
 
 export const NavMenu = styled.nav<NavMenuProps>` 
@@ -29,6 +36,18 @@ export const NavMenu = styled.nav<NavMenuProps>`
     height: calc(100vh - 5.5rem);
     padding: 3.2rem 1rem;       
     transition: all 0.2s linear;
+
+    @media only screen and (max-width: 768px) {  
+        max-width: 50vw;  
+        height:calc(100vh - 3rem);
+        top: 3rem;  
+    }
+
+    @media only screen and (max-width: 510px) {  
+        max-width: 70vw;  
+        height:calc(100vh - 3rem);
+        top: 3rem;  
+    }
 `
 
 export const MenuItem = styled.a`

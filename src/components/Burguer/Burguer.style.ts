@@ -13,6 +13,11 @@ export const BurgerBtn = styled.button`
     padding: 0;
     z-index: 10;
 
+    @media only screen and (max-width: 768px) {
+        width: 1.45rem;
+        height: 1.45rem;
+    }
+
     &:focus {
         outline: none;
     }
@@ -34,6 +39,10 @@ export const BurgerBtn = styled.button`
 
         &.open:last-child {
             transform: rotate(-45deg) ;
+        }
+
+        @media only screen and (max-width: 768px) {
+            width: 1.45rem;            
         }
     }
 `;
