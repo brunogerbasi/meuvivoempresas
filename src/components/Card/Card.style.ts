@@ -11,6 +11,10 @@ export const CardItem = styled.div`
   justify-content: center;
   margin-bottom: 20px;
   gap: 18px;
+
+  @media only screen and (max-width: 600px) {
+    gap: 15px;
+  }
 `;
 
 export const CardWrapper = styled.div`  
@@ -22,10 +26,21 @@ export const CardWrapper = styled.div`
   background-color: ${vivoTheme.color_background};
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 20px 0px;    
   transition: transform 0.2s linear 0s;
+  margin-bottom: 15px;
 
   &:hover{
     box-shadow: rgba(0, 0, 0, 0.20) 0px 4px 20px 0px;  
     transform: translateY(-3px);
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 10px 0 0;
+    width: calc(50% - 10px); 
+    margin-bottom: 10px;
+  }
+
+  @media only screen and (max-width: 450px) {    
+    width: 100%;     
   }
 `;
 
@@ -47,6 +62,10 @@ export const CardAlt = styled.div`
   left: 0;
   right: 0;
   margin: 0 20px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 7px;
+  }
 `;
 
 export const CardHeader = styled.div`
@@ -54,6 +73,11 @@ export const CardHeader = styled.div`
   justify-content: center;
   align-items: baseline;
   padding: 0 14px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 10px;
+    padding: 0 5px;
+  }  
 `;
 
 export const CardIcon = styled.img`  
@@ -61,6 +85,12 @@ export const CardIcon = styled.img`
   padding-top: 3px;    
   height: 24px;
   width: 32px;
+  
+  @media only screen and (max-width: 600px) {
+    padding-top: 0px;  
+    height: 15px;
+    width: 20px;
+  }
 `;
 
 export const CardWrapperTitle = styled.div`
@@ -74,6 +104,11 @@ export const CardTitle = styled.h3`
   line-height: 40px;
   letter-spacing: 0.1rem;
   color: ${vivoTheme.color_primary};
+
+  @media only screen and (max-width: 600px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 `;
 
 export const CardSubTitle = styled.p`
@@ -88,6 +123,10 @@ export const CardSubTitle = styled.p`
 export const CardDescription = styled.div`
   height: 75px;
   background: ${vivoTheme.color_background2};
+
+  @media only screen and (max-width: 600px) {    
+    height: 50px;    
+  }
 `;
 
 export const CardFooter = styled.div`
